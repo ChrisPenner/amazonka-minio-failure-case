@@ -59,7 +59,7 @@ awsEnv s3Info = do
 err :: IO a
 err = do
     hPutStrLn stderr "usage - either of:"
-    hPutStrLn stderr "exe-name host <port> <srcFile> <destBucket> <destFile>"
+    hPutStrLn stderr "exe-name host <host> <port> <srcFile> <destBucket> <destFile>"
     hPutStrLn stderr "exe-name aws <srcFile> <destBucket> <destFile>"
     exitFailure
 
